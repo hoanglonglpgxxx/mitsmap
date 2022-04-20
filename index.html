@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Code use case SoSMap</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@goongmaps/goong-js@1.0.9/dist/goong-js.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@goongmaps/goong-js@1.0.9/dist/goong-js.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <div id="map" style="width: 400px; height: 300px"></div>
+  </body>
+  <script>
+    goongjs.accessToken = "2hF01y5fWMltg5TIL98MyWG0wEvmubgQlfBEOuT2";
+    var map = new goongjs.Map({
+      container: "map",
+      style: "https://tiles.goong.io/assets/goong_map_web.json", // stylesheet location
+      center: [105.83991, 21.028], // starting position [lng, lat]
+      zoom: 9, // starting zoom
+    });
+  </script>
+</html>
